@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "SWRevealViewController.h"
+@import CoreLocation;
 
-@interface ViewController ()
+@interface ViewController () <CLLocationManagerDelegate>
+@property (strong,nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -20,6 +22,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.mapView.delegate = self;
+    self.locationManager = [[CLLocationManager alloc]init];
+    self.locationManager.delegate = self;
+    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    
+    [self.locationManager startUpdatingLocation];
     
     SWRevealViewController *revealViewController  = self.revealViewController;
     if (revealViewController) {
@@ -49,5 +59,9 @@
     [self.mapView addAnnotation:point];
 }
 
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%@",[locations lastObject]);
+}
 
 @end
