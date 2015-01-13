@@ -8,13 +8,17 @@
 
 #import "VenueViewController.h"
 #import "SWRevealViewController.h"
-
+#import "VenueTableViewCell.h"
 
 @interface VenueViewController ()
 
 @end
 
-@implementation VenueViewController
+@implementation VenueViewController{
+    NSArray *listMall;
+    NSArray *listMallLocation;
+    NSArray *listMallThumbnail;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +36,13 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
 
+    NSString *path      = [[NSBundle mainBundle]pathForResource:@"Venue" ofType:@"plist"];
+    NSDictionary *dict  = [[NSDictionary alloc]initWithContentsOfFile:path];
+    
+    listMall            = [dict objectForKey:@"Name"];
+    listMallLocation    = [dict objectForKey:@"Location"];
+    listMallThumbnail   = [dict objectForKey:@"Thumbnail"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,24 +55,36 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [listMall count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VenueTableCell" forIndexPath:indexPath];
     
+    VenueTableViewCell *cell = (VenueTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"VenueTableCell"];
     // Configure the cell...
     
+    
+    cell.thumbnail.image = [UIImage imageNamed:[listMallThumbnail objectAtIndex:indexPath.row]];
+    cell.nameLabel.text = [listMall objectAtIndex:indexPath.row];
+    cell.locationLabel.text = [listMallLocation objectAtIndex:indexPath.row];
+    
+    
+    /*
+    [cell.thumbnail setImage:[UIImage imageNamed:[listMallThumbnail objectAtIndex:indexPath.row]]];
+    [cell.nameLabel setText:[listMall objectAtIndex:indexPath.row]];
+    [cell.locationLabel setText:[listMallLocation objectAtIndex:indexPath.row]];
+    */
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

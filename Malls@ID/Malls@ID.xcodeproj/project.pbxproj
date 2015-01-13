@@ -41,6 +41,12 @@
 		252382861A64ED37001393AA /* VenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252382851A64ED37001393AA /* VenueViewController.m */; };
 		252382891A64F2D9001393AA /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252382881A64F2D9001393AA /* StoreViewController.m */; };
 		2523828C1A64F2EB001393AA /* BrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2523828B1A64F2EB001393AA /* BrandViewController.m */; };
+		252382941A650834001393AA /* gandaria_city.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382901A650834001393AA /* gandaria_city.png */; };
+		252382951A650834001393AA /* grand_indonesia.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 252382911A650834001393AA /* grand_indonesia.PNG */; };
+		252382961A650834001393AA /* kelapa_gading_mall.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 252382921A650834001393AA /* kelapa_gading_mall.PNG */; };
+		252382971A650834001393AA /* pondok_indah_mall.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382931A650834001393AA /* pondok_indah_mall.png */; };
+		252382991A65090C001393AA /* Venue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252382981A65090C001393AA /* Venue.plist */; };
+		2523829C1A651221001393AA /* VenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2523829B1A651221001393AA /* VenueTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,13 @@
 		252382881A64F2D9001393AA /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
 		2523828A1A64F2EB001393AA /* BrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandViewController.h; sourceTree = "<group>"; };
 		2523828B1A64F2EB001393AA /* BrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandViewController.m; sourceTree = "<group>"; };
+		252382901A650834001393AA /* gandaria_city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gandaria_city.png; sourceTree = "<group>"; };
+		252382911A650834001393AA /* grand_indonesia.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grand_indonesia.PNG; sourceTree = "<group>"; };
+		252382921A650834001393AA /* kelapa_gading_mall.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kelapa_gading_mall.PNG; sourceTree = "<group>"; };
+		252382931A650834001393AA /* pondok_indah_mall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pondok_indah_mall.png; sourceTree = "<group>"; };
+		252382981A65090C001393AA /* Venue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Venue.plist; sourceTree = "<group>"; };
+		2523829A1A651221001393AA /* VenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewCell.h; sourceTree = "<group>"; };
+		2523829B1A651221001393AA /* VenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +168,11 @@
 				2523822D1A64D45B001393AA /* AppDelegate.m */,
 				2523828D1A64F2FB001393AA /* ViewControllers */,
 				252382351A64D45B001393AA /* Main.storyboard */,
+				2523829A1A651221001393AA /* VenueTableViewCell.h */,
+				2523829B1A651221001393AA /* VenueTableViewCell.m */,
 				252382381A64D45B001393AA /* Images.xcassets */,
 				2523823A1A64D45B001393AA /* LaunchScreen.xib */,
+				252382981A65090C001393AA /* Venue.plist */,
 				2523822F1A64D45B001393AA /* Malls_ID.xcdatamodeld */,
 				252382281A64D45B001393AA /* Supporting Files */,
 			);
@@ -202,22 +218,8 @@
 		252382561A64D772001393AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				252382711A64DE3C001393AA /* map.png */,
-				252382721A64DE3C001393AA /* menu.png */,
-				252382731A64DE3C001393AA /* menu@2x.png */,
-				252382571A64DD9A001393AA /* box.png */,
-				252382581A64DD9A001393AA /* calendar.png */,
-				252382591A64DD9A001393AA /* clock.png */,
-				2523825A1A64DD9A001393AA /* comment.png */,
-				2523825B1A64DD9A001393AA /* date_count.png */,
-				2523825C1A64DD9A001393AA /* directory.png */,
-				2523825D1A64DD9A001393AA /* letter.png */,
-				2523825E1A64DD9A001393AA /* mail.png */,
-				2523825F1A64DD9A001393AA /* price_tag_blue.png */,
-				252382601A64DD9A001393AA /* price_tag_green.png */,
-				252382611A64DD9A001393AA /* price_tag_red.png */,
-				252382621A64DD9A001393AA /* price_tag_yellow.png */,
-				252382631A64DD9A001393AA /* shopping_bag.png */,
+				2523828E1A650807001393AA /* Malls */,
+				2523828F1A650816001393AA /* Icons */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -237,6 +239,40 @@
 				2523828B1A64F2EB001393AA /* BrandViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2523828E1A650807001393AA /* Malls */ = {
+			isa = PBXGroup;
+			children = (
+				252382901A650834001393AA /* gandaria_city.png */,
+				252382911A650834001393AA /* grand_indonesia.PNG */,
+				252382921A650834001393AA /* kelapa_gading_mall.PNG */,
+				252382931A650834001393AA /* pondok_indah_mall.png */,
+			);
+			name = Malls;
+			sourceTree = "<group>";
+		};
+		2523828F1A650816001393AA /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				252382711A64DE3C001393AA /* map.png */,
+				252382721A64DE3C001393AA /* menu.png */,
+				252382731A64DE3C001393AA /* menu@2x.png */,
+				252382571A64DD9A001393AA /* box.png */,
+				252382581A64DD9A001393AA /* calendar.png */,
+				252382591A64DD9A001393AA /* clock.png */,
+				2523825A1A64DD9A001393AA /* comment.png */,
+				2523825B1A64DD9A001393AA /* date_count.png */,
+				2523825C1A64DD9A001393AA /* directory.png */,
+				2523825D1A64DD9A001393AA /* letter.png */,
+				2523825E1A64DD9A001393AA /* mail.png */,
+				2523825F1A64DD9A001393AA /* price_tag_blue.png */,
+				252382601A64DD9A001393AA /* price_tag_green.png */,
+				252382611A64DD9A001393AA /* price_tag_red.png */,
+				252382621A64DD9A001393AA /* price_tag_yellow.png */,
+				252382631A64DD9A001393AA /* shopping_bag.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,15 +361,20 @@
 				2523826F1A64DD9A001393AA /* price_tag_yellow.png in Resources */,
 				252382761A64DE3C001393AA /* menu@2x.png in Resources */,
 				252382661A64DD9A001393AA /* clock.png in Resources */,
+				252382951A650834001393AA /* grand_indonesia.PNG in Resources */,
 				252382701A64DD9A001393AA /* shopping_bag.png in Resources */,
+				252382941A650834001393AA /* gandaria_city.png in Resources */,
 				252382371A64D45B001393AA /* Main.storyboard in Resources */,
 				2523826E1A64DD9A001393AA /* price_tag_red.png in Resources */,
 				2523823C1A64D45B001393AA /* LaunchScreen.xib in Resources */,
 				252382651A64DD9A001393AA /* calendar.png in Resources */,
 				2523826A1A64DD9A001393AA /* letter.png in Resources */,
 				2523826B1A64DD9A001393AA /* mail.png in Resources */,
+				252382971A650834001393AA /* pondok_indah_mall.png in Resources */,
+				252382991A65090C001393AA /* Venue.plist in Resources */,
 				252382741A64DE3C001393AA /* map.png in Resources */,
 				252382391A64D45B001393AA /* Images.xcassets in Resources */,
+				252382961A650834001393AA /* kelapa_gading_mall.PNG in Resources */,
 				252382641A64DD9A001393AA /* box.png in Resources */,
 				252382671A64DD9A001393AA /* comment.png in Resources */,
 				2523826C1A64DD9A001393AA /* price_tag_blue.png in Resources */,
@@ -362,6 +403,7 @@
 				252382791A64E4DF001393AA /* SidebarViewController.m in Sources */,
 				252382891A64F2D9001393AA /* StoreViewController.m in Sources */,
 				252382861A64ED37001393AA /* VenueViewController.m in Sources */,
+				2523829C1A651221001393AA /* VenueTableViewCell.m in Sources */,
 				252382341A64D45B001393AA /* ViewController.m in Sources */,
 				2523822B1A64D45B001393AA /* main.m in Sources */,
 			);
