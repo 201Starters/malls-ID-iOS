@@ -213,6 +213,9 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     
     UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:shadowBounds];
     _frontView.layer.shadowPath = shadowPath.CGPath;
+    
+    
+
 }
 
 
@@ -493,12 +496,13 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
 {
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-
+    
     if ( fromViewController )
     {
         [UIView transitionFromView:fromViewController.view toView:toViewController.view duration:_duration
             options:UIViewAnimationOptionTransitionCrossDissolve|UIViewAnimationOptionOverrideInheritedOptions
             completion:^(BOOL finished) { [transitionContext completeTransition:finished]; }];
+        
     }
     else
     {
@@ -713,6 +717,9 @@ const int FrontViewPositionNone = 0xff;
     
     // now set the desired initial position
     [self _setFrontViewPosition:initialPosition withDuration:0.0];
+    
+   
+    
 }
 
 
@@ -738,6 +745,8 @@ const int FrontViewPositionNone = 0xff;
     // and resume it back to the previous state, it is possible to override this behaviour by
     // intercepting it on the panGestureBegan and panGestureEnded delegates
     _userInteractionStore = _contentView.userInteractionEnabled;
+    
+    
 }
 
 
@@ -762,6 +771,7 @@ const int FrontViewPositionNone = 0xff;
     if ( ![self isViewLoaded])
     {
         [self _performTransitionOperation:SWRevealControllerOperationReplaceFrontController withViewController:frontViewController animated:NO];
+        
         return;
     }
     
@@ -774,6 +784,7 @@ const int FrontViewPositionNone = 0xff;
     if ( ![self isViewLoaded])
     {
         [self _performTransitionOperation:SWRevealControllerOperationReplaceFrontController withViewController:frontViewController animated:NO];
+        
         return;
     }
     
@@ -824,6 +835,16 @@ const int FrontViewPositionNone = 0xff;
         toggledFrontViewPosition = FrontViewPositionRight;
     
     [self setFrontViewPosition:toggledFrontViewPosition animated:animated];
+    //dari sini
+//    UIVisualEffect *blurEffect;
+//    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    
+//    UIVisualEffectView *visualEffectView;
+//    visualEffectView = [[UIVisualEffectView alloc]initWithEffect:blurEffect];
+//    
+//    visualEffectView.frame = _frontViewController.view.bounds;
+//    [_frontViewController.view addSubview:visualEffectView];
+    //sampe sini editan gw
 }
 
 
@@ -974,6 +995,17 @@ const int FrontViewPositionNone = 0xff;
 {
     CGFloat xLocation, dragProgress, overProgress;
     [self _getDragLocation:&xLocation progress:&dragProgress overdrawProgress:&overProgress];
+    
+    //dari sini
+//    UIVisualEffect *blurEffect;
+//    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    
+//    UIVisualEffectView *visualEffectView;
+//    visualEffectView = [[UIVisualEffectView alloc]initWithEffect:blurEffect];
+//    
+//    visualEffectView.frame = _frontViewController.view.bounds;
+//    [_frontViewController.view addSubview:visualEffectView];
+    //sampe sini editan gw
     
     if ( [_delegate respondsToSelector:@selector(revealController:panGestureMovedToLocation:progress:overProgress:)] )
         [_delegate revealController:self panGestureMovedToLocation:xLocation progress:dragProgress overProgress:overProgress];

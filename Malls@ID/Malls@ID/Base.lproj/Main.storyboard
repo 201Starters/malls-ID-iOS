@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -91,11 +92,18 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Akf-lT-UqR" id="H5u-xv-HhW">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-U6-aAf">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-U6-aAf">
                                             <rect key="frame" x="22" y="7" width="103" height="91"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="103" id="Ek9-hr-5cD"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKF-iC-YCv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKF-iC-YCv">
                                             <rect key="frame" x="133" y="19" width="358" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="SRY-0h-4DW"/>
+                                                <constraint firstAttribute="width" constant="358" id="udI-e4-XhZ"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -103,7 +111,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vp-gv-gtZ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vp-gv-gtZ">
                                             <rect key="frame" x="133" y="59" width="358" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -113,6 +121,17 @@
                                             </variation>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="eTL-U6-aAf" firstAttribute="bottom" secondItem="H5u-xv-HhW" secondAttribute="bottomMargin" id="7le-Qd-5dg"/>
+                                        <constraint firstItem="NKF-iC-YCv" firstAttribute="top" secondItem="H5u-xv-HhW" secondAttribute="topMargin" constant="11" id="Dr3-fh-vjR"/>
+                                        <constraint firstItem="2Vp-gv-gtZ" firstAttribute="top" secondItem="NKF-iC-YCv" secondAttribute="bottom" constant="19" id="UZs-Lp-kP5"/>
+                                        <constraint firstItem="eTL-U6-aAf" firstAttribute="top" secondItem="H5u-xv-HhW" secondAttribute="topMargin" constant="-1" id="fOZ-f7-2QR"/>
+                                        <constraint firstItem="NKF-iC-YCv" firstAttribute="trailing" secondItem="2Vp-gv-gtZ" secondAttribute="trailing" id="i8f-xA-Y9h"/>
+                                        <constraint firstItem="NKF-iC-YCv" firstAttribute="leading" secondItem="eTL-U6-aAf" secondAttribute="trailing" constant="8" symbolic="YES" id="liG-RO-ePP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2Vp-gv-gtZ" secondAttribute="bottom" constant="9" id="oHS-Xa-Zjs"/>
+                                        <constraint firstItem="eTL-U6-aAf" firstAttribute="leading" secondItem="H5u-xv-HhW" secondAttribute="leadingMargin" constant="14" id="sT5-62-Jue"/>
+                                        <constraint firstItem="2Vp-gv-gtZ" firstAttribute="leading" secondItem="NKF-iC-YCv" secondAttribute="leading" id="yLl-6E-aqJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="locationLabel" destination="2Vp-gv-gtZ" id="AAi-3J-G5j"/>

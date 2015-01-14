@@ -36,8 +36,11 @@
         [self.sidebarButton setTarget:self.revealViewController];
         [self.sidebarButton setAction:@selector(revealToggle:)];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        
+                
     }
-    
+    NSLog(@"System Version is %@",[[UIDevice currentDevice]systemVersion]);
+    NSLog(@"RevealViewController is %@",revealViewController);
 }
 
 - (void)didReceiveMemoryWarning {

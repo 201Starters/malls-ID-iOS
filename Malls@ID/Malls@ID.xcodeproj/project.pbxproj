@@ -54,6 +54,7 @@
 		252382AE1A66709E001393AA /* zara.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382A91A66709E001393AA /* zara.png */; };
 		252382B01A6670EB001393AA /* Brand.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252382AF1A6670EB001393AA /* Brand.plist */; };
 		252382B31A667BD8001393AA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252382B21A667BD8001393AA /* DetailViewController.m */; };
+		2525C4291A66CB9200DB466A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2525C4281A66CB9200DB466A /* background.png */; };
 		252708181A66877800E5E782 /* DetailTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252708171A66877800E5E782 /* DetailTabBarController.m */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 		252382AF1A6670EB001393AA /* Brand.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Brand.plist; sourceTree = "<group>"; };
 		252382B11A667BD8001393AA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		252382B21A667BD8001393AA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2525C4281A66CB9200DB466A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		252708161A66877800E5E782 /* DetailTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTabBarController.h; sourceTree = "<group>"; };
 		252708171A66877800E5E782 /* DetailTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +239,7 @@
 		252382561A64D772001393AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2525C4281A66CB9200DB466A /* background.png */,
 				252382A41A66707C001393AA /* Brands */,
 				2523828E1A650807001393AA /* Malls */,
 				2523828F1A650816001393AA /* Icons */,
@@ -406,6 +409,7 @@
 				252382AE1A66709E001393AA /* zara.png in Resources */,
 				2523826E1A64DD9A001393AA /* price_tag_red.png in Resources */,
 				252382AB1A66709E001393AA /* matahari.png in Resources */,
+				2525C4291A66CB9200DB466A /* background.png in Resources */,
 				2523823C1A64D45B001393AA /* LaunchScreen.xib in Resources */,
 				252382651A64DD9A001393AA /* calendar.png in Resources */,
 				2523826A1A64DD9A001393AA /* letter.png in Resources */,
