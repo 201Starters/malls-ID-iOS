@@ -47,6 +47,14 @@
 		252382971A650834001393AA /* pondok_indah_mall.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382931A650834001393AA /* pondok_indah_mall.png */; };
 		252382991A65090C001393AA /* Venue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252382981A65090C001393AA /* Venue.plist */; };
 		2523829C1A651221001393AA /* VenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2523829B1A651221001393AA /* VenueTableViewCell.m */; };
+		252382AA1A66709E001393AA /* ibox.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382A51A66709E001393AA /* ibox.png */; };
+		252382AB1A66709E001393AA /* matahari.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382A61A66709E001393AA /* matahari.png */; };
+		252382AC1A66709E001393AA /* sports_station.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382A71A66709E001393AA /* sports_station.png */; };
+		252382AD1A66709E001393AA /* uniqlo.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382A81A66709E001393AA /* uniqlo.png */; };
+		252382AE1A66709E001393AA /* zara.png in Resources */ = {isa = PBXBuildFile; fileRef = 252382A91A66709E001393AA /* zara.png */; };
+		252382B01A6670EB001393AA /* Brand.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252382AF1A6670EB001393AA /* Brand.plist */; };
+		252382B31A667BD8001393AA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252382B21A667BD8001393AA /* DetailViewController.m */; };
+		252708181A66877800E5E782 /* DetailTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252708171A66877800E5E782 /* DetailTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +120,16 @@
 		252382981A65090C001393AA /* Venue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Venue.plist; sourceTree = "<group>"; };
 		2523829A1A651221001393AA /* VenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewCell.h; sourceTree = "<group>"; };
 		2523829B1A651221001393AA /* VenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewCell.m; sourceTree = "<group>"; };
+		252382A51A66709E001393AA /* ibox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ibox.png; sourceTree = "<group>"; };
+		252382A61A66709E001393AA /* matahari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matahari.png; sourceTree = "<group>"; };
+		252382A71A66709E001393AA /* sports_station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports_station.png; sourceTree = "<group>"; };
+		252382A81A66709E001393AA /* uniqlo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uniqlo.png; sourceTree = "<group>"; };
+		252382A91A66709E001393AA /* zara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zara.png; sourceTree = "<group>"; };
+		252382AF1A6670EB001393AA /* Brand.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Brand.plist; sourceTree = "<group>"; };
+		252382B11A667BD8001393AA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		252382B21A667BD8001393AA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		252708161A66877800E5E782 /* DetailTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTabBarController.h; sourceTree = "<group>"; };
+		252708171A66877800E5E782 /* DetailTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +191,7 @@
 				252382381A64D45B001393AA /* Images.xcassets */,
 				2523823A1A64D45B001393AA /* LaunchScreen.xib */,
 				252382981A65090C001393AA /* Venue.plist */,
+				252382AF1A6670EB001393AA /* Brand.plist */,
 				2523822F1A64D45B001393AA /* Malls_ID.xcdatamodeld */,
 				252382281A64D45B001393AA /* Supporting Files */,
 			);
@@ -218,6 +237,7 @@
 		252382561A64D772001393AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				252382A41A66707C001393AA /* Brands */,
 				2523828E1A650807001393AA /* Malls */,
 				2523828F1A650816001393AA /* Icons */,
 			);
@@ -233,10 +253,14 @@
 				252382331A64D45B001393AA /* ViewController.m */,
 				252382841A64ED37001393AA /* VenueViewController.h */,
 				252382851A64ED37001393AA /* VenueViewController.m */,
+				252382B11A667BD8001393AA /* DetailViewController.h */,
+				252382B21A667BD8001393AA /* DetailViewController.m */,
 				252382871A64F2D9001393AA /* StoreViewController.h */,
 				252382881A64F2D9001393AA /* StoreViewController.m */,
 				2523828A1A64F2EB001393AA /* BrandViewController.h */,
 				2523828B1A64F2EB001393AA /* BrandViewController.m */,
+				252708161A66877800E5E782 /* DetailTabBarController.h */,
+				252708171A66877800E5E782 /* DetailTabBarController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -273,6 +297,18 @@
 				252382631A64DD9A001393AA /* shopping_bag.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		252382A41A66707C001393AA /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				252382A51A66709E001393AA /* ibox.png */,
+				252382A61A66709E001393AA /* matahari.png */,
+				252382A71A66709E001393AA /* sports_station.png */,
+				252382A81A66709E001393AA /* uniqlo.png */,
+				252382A91A66709E001393AA /* zara.png */,
+			);
+			name = Brands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,11 +397,15 @@
 				2523826F1A64DD9A001393AA /* price_tag_yellow.png in Resources */,
 				252382761A64DE3C001393AA /* menu@2x.png in Resources */,
 				252382661A64DD9A001393AA /* clock.png in Resources */,
+				252382AA1A66709E001393AA /* ibox.png in Resources */,
 				252382951A650834001393AA /* grand_indonesia.PNG in Resources */,
 				252382701A64DD9A001393AA /* shopping_bag.png in Resources */,
+				252382AD1A66709E001393AA /* uniqlo.png in Resources */,
 				252382941A650834001393AA /* gandaria_city.png in Resources */,
 				252382371A64D45B001393AA /* Main.storyboard in Resources */,
+				252382AE1A66709E001393AA /* zara.png in Resources */,
 				2523826E1A64DD9A001393AA /* price_tag_red.png in Resources */,
+				252382AB1A66709E001393AA /* matahari.png in Resources */,
 				2523823C1A64D45B001393AA /* LaunchScreen.xib in Resources */,
 				252382651A64DD9A001393AA /* calendar.png in Resources */,
 				2523826A1A64DD9A001393AA /* letter.png in Resources */,
@@ -374,10 +414,12 @@
 				252382991A65090C001393AA /* Venue.plist in Resources */,
 				252382741A64DE3C001393AA /* map.png in Resources */,
 				252382391A64D45B001393AA /* Images.xcassets in Resources */,
+				252382AC1A66709E001393AA /* sports_station.png in Resources */,
 				252382961A650834001393AA /* kelapa_gading_mall.PNG in Resources */,
 				252382641A64DD9A001393AA /* box.png in Resources */,
 				252382671A64DD9A001393AA /* comment.png in Resources */,
 				2523826C1A64DD9A001393AA /* price_tag_blue.png in Resources */,
+				252382B01A6670EB001393AA /* Brand.plist in Resources */,
 				252382681A64DD9A001393AA /* date_count.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,11 +440,13 @@
 			files = (
 				2523828C1A64F2EB001393AA /* BrandViewController.m in Sources */,
 				252382311A64D45B001393AA /* Malls_ID.xcdatamodeld in Sources */,
+				252708181A66877800E5E782 /* DetailTabBarController.m in Sources */,
 				2523822E1A64D45B001393AA /* AppDelegate.m in Sources */,
 				252382541A64D67A001393AA /* SWRevealViewController.m in Sources */,
 				252382791A64E4DF001393AA /* SidebarViewController.m in Sources */,
 				252382891A64F2D9001393AA /* StoreViewController.m in Sources */,
 				252382861A64ED37001393AA /* VenueViewController.m in Sources */,
+				252382B31A667BD8001393AA /* DetailViewController.m in Sources */,
 				2523829C1A651221001393AA /* VenueTableViewCell.m in Sources */,
 				252382341A64D45B001393AA /* ViewController.m in Sources */,
 				2523822B1A64D45B001393AA /* main.m in Sources */,
@@ -600,6 +644,7 @@
 				2523824D1A64D45B001393AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2523824E1A64D45B001393AA /* Build configuration list for PBXNativeTarget "Malls@IDTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +653,7 @@
 				252382501A64D45B001393AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -9,6 +9,7 @@
 #import "VenueViewController.h"
 #import "SWRevealViewController.h"
 #import "VenueTableViewCell.h"
+#import "DetailTabBarController.h"
 
 @interface VenueViewController ()
 
@@ -85,6 +86,16 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showVenueDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailTabBarController *destViewController = segue.destinationViewController;
+        [destViewController setMallName:[listMall objectAtIndex:indexPath.row]];
+        [destViewController setMallLocation:[listMallLocation objectAtIndex:indexPath.row]];
+        [destViewController setMallThumbnail:[listMallThumbnail objectAtIndex:indexPath.row]];
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

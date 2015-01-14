@@ -13,7 +13,10 @@
 
 @end
 
-@implementation BrandViewController
+@implementation BrandViewController{
+    NSArray *listBrand;
+    NSArray *listBrandThumbnail;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +33,12 @@
         [self.sidebarButton setAction:@selector(revealToggle:)];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+    
+    NSString *path      = [[NSBundle mainBundle]pathForResource:@"Brand" ofType:@"plist"];
+    NSDictionary *dict  = [[NSDictionary alloc]initWithContentsOfFile:path];
+
+    listBrand           = [dict objectForKey:@"Name"];
+    listBrandThumbnail  = [dict objectForKey:@"Thumbnail"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,24 +51,31 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [listBrand count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableCell"];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BrandTableCell"];
+    }
     
     // Configure the cell...
+    cell.textLabel.text = [listBrand objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:[listBrandThumbnail objectAtIndex:indexPath.row]];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
