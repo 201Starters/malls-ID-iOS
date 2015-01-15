@@ -63,15 +63,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableCell" forIndexPath:indexPath];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BrandTableItem"];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BrandTableCell"];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BrandTableItem"];
     }
     
+    UIImageView *ImageThumb = (UIImageView *)[cell viewWithTag:100];
+    UILabel *LabelText=(UILabel *)[cell viewWithTag:101];
+    
     // Configure the cell...
-    cell.textLabel.text = [listBrand objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[listBrandThumbnail objectAtIndex:indexPath.row]];
+    LabelText.text = [listBrand objectAtIndex:indexPath.row];
+    ImageThumb.image = [UIImage imageNamed:[listBrandThumbnail objectAtIndex:indexPath.row]];
     
     return cell;
 }
