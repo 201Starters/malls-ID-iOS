@@ -56,6 +56,7 @@
 		252382B31A667BD8001393AA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252382B21A667BD8001393AA /* DetailViewController.m */; };
 		2525C4291A66CB9200DB466A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2525C4281A66CB9200DB466A /* background.png */; };
 		252708181A66877800E5E782 /* DetailTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252708171A66877800E5E782 /* DetailTabBarController.m */; };
+		417E2CD61A67B94E000510B9 /* DetailStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417E2CD51A67B94E000510B9 /* DetailStoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		2525C4281A66CB9200DB466A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		252708161A66877800E5E782 /* DetailTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTabBarController.h; sourceTree = "<group>"; };
 		252708171A66877800E5E782 /* DetailTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTabBarController.m; sourceTree = "<group>"; };
+		417E2CD41A67B94E000510B9 /* DetailStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStoreViewController.h; sourceTree = "<group>"; };
+		417E2CD51A67B94E000510B9 /* DetailStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,7 @@
 		252382271A64D45A001393AA /* Malls@ID */ = {
 			isa = PBXGroup;
 			children = (
+				417E2CD31A67B90F000510B9 /* Menu_Store */,
 				252382511A64D649001393AA /* SWRevealViewController */,
 				2523822C1A64D45B001393AA /* AppDelegate.h */,
 				2523822D1A64D45B001393AA /* AppDelegate.m */,
@@ -258,8 +262,6 @@
 				252382851A64ED37001393AA /* VenueViewController.m */,
 				252382B11A667BD8001393AA /* DetailViewController.h */,
 				252382B21A667BD8001393AA /* DetailViewController.m */,
-				252382871A64F2D9001393AA /* StoreViewController.h */,
-				252382881A64F2D9001393AA /* StoreViewController.m */,
 				2523828A1A64F2EB001393AA /* BrandViewController.h */,
 				2523828B1A64F2EB001393AA /* BrandViewController.m */,
 				252708161A66877800E5E782 /* DetailTabBarController.h */,
@@ -312,6 +314,17 @@
 				252382A91A66709E001393AA /* zara.png */,
 			);
 			name = Brands;
+			sourceTree = "<group>";
+		};
+		417E2CD31A67B90F000510B9 /* Menu_Store */ = {
+			isa = PBXGroup;
+			children = (
+				252382871A64F2D9001393AA /* StoreViewController.h */,
+				252382881A64F2D9001393AA /* StoreViewController.m */,
+				417E2CD41A67B94E000510B9 /* DetailStoreViewController.h */,
+				417E2CD51A67B94E000510B9 /* DetailStoreViewController.m */,
+			);
+			name = Menu_Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +464,7 @@
 				252382891A64F2D9001393AA /* StoreViewController.m in Sources */,
 				252382861A64ED37001393AA /* VenueViewController.m in Sources */,
 				252382B31A667BD8001393AA /* DetailViewController.m in Sources */,
+				417E2CD61A67B94E000510B9 /* DetailStoreViewController.m in Sources */,
 				2523829C1A651221001393AA /* VenueTableViewCell.m in Sources */,
 				252382341A64D45B001393AA /* ViewController.m in Sources */,
 				2523822B1A64D45B001393AA /* main.m in Sources */,
