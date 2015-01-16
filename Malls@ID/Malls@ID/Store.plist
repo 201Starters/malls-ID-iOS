@@ -2,21 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Name</key>
-	<array>
-		<string>iBox</string>
-		<string>Sport Station</string>
-		<string>Matahari</string>
-		<string>Zara</string>
-		<string>Uniqlo</string>
-	</array>
 	<key>Thumbnail</key>
 	<array>
-		<string>ibox.png</string>
+		<string>uniqlo.png</string>
 		<string>sports_station.png</string>
 		<string>matahari.png</string>
+		<string>ibox.png</string>
 		<string>zara.png</string>
-		<string>uniqlo.png</string>
+	</array>
+	<key>Name</key>
+	<array>
+		<string>uniqlo</string>
+		<string>sport station</string>
+		<string>matahari</string>
+		<string>ibox</string>
+		<string>zara</string>
 	</array>
 </dict>
 </plist>

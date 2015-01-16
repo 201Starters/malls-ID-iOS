@@ -88,7 +88,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showVenueDetail"]) {
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         DetailTabBarController *destViewController = segue.destinationViewController;
         [destViewController setMallName:[listMall objectAtIndex:indexPath.row]];

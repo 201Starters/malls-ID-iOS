@@ -70,10 +70,10 @@
     }
     
     UIImageView *ImageThumb = (UIImageView *)[cell viewWithTag:100];
-    UILabel *LabelText=(UILabel *)[cell viewWithTag:101];
+    //UILabel *LabelText=(UILabel *)[cell viewWithTag:101];
     
     // Configure the cell...
-    LabelText.text = [listBrand objectAtIndex:indexPath.row];
+    //LabelText.text = [listBrand objectAtIndex:indexPath.row];
     ImageThumb.image = [UIImage imageNamed:[listBrandThumbnail objectAtIndex:indexPath.row]];
     
     return cell;

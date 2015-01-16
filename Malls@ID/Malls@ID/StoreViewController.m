@@ -8,6 +8,7 @@
 
 #import "StoreViewController.h"
 #import "SWRevealViewController.h"
+#import "DetailStoreViewController.h"
 
 @interface StoreViewController ()
 
@@ -17,8 +18,8 @@
 
 
 {
-    NSArray *listBrand;
-    NSArray *listBrandThumbnail;
+    NSArray *listStore;
+    NSArray *listStoreThumbnail;
 }
 
 - (void)viewDidLoad {
@@ -29,11 +30,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSString *path      = [[NSBundle mainBundle]pathForResource:@"Brand" ofType:@"plist"];
+    NSString *path      = [[NSBundle mainBundle]pathForResource:@"Store" ofType:@"plist"];
     NSDictionary *dict  = [[NSDictionary alloc]initWithContentsOfFile:path];
     
-    listBrand           = [dict objectForKey:@"Name"];
-    listBrandThumbnail  = [dict objectForKey:@"Thumbnail"];
+    listStore           = [dict objectForKey:@"Name"];
+    listStoreThumbnail  = [dict objectForKey:@"Thumbnail"];
     
     SWRevealViewController *revealViewController  = self.revealViewController;
     if (revealViewController) {
@@ -59,7 +60,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [listBrand count];
+    return [listStore count];
 }
 
 
@@ -70,16 +71,27 @@
     }
     
     UIImageView *ImageThumb = (UIImageView *)[cell viewWithTag:100];
-    UILabel *LabelText=(UILabel *)[cell viewWithTag:101];
+    //UILabel *LabelText=(UILabel *)[cell viewWithTag:101];
     
     // Configure the cell...
-    LabelText.text = [listBrand objectAtIndex:indexPath.row];
-    ImageThumb.image = [UIImage imageNamed:[listBrandThumbnail objectAtIndex:indexPath.row]];
+    //LabelText.text = [listStore objectAtIndex:indexPath.row];
+    ImageThumb.image = [UIImage imageNamed:[listStoreThumbnail objectAtIndex:indexPath.row]];
     // Configure the cell...
     
     return cell;
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+       // DetailStoreViewController *destViewController = segue.destinationViewController;
+        /*[destViewController setMallName:[listMall objectAtIndex:indexPath.row]];
+        [destViewController setMallLocation:[listMallLocation objectAtIndex:indexPath.row]];
+        [destViewController setMallThumbnail:[listMallThumbnail objectAtIndex:indexPath.row]];*/
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

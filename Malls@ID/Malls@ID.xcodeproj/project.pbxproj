@@ -57,6 +57,11 @@
 		2525C4291A66CB9200DB466A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2525C4281A66CB9200DB466A /* background.png */; };
 		252708181A66877800E5E782 /* DetailTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252708171A66877800E5E782 /* DetailTabBarController.m */; };
 		417E2CD61A67B94E000510B9 /* DetailStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417E2CD51A67B94E000510B9 /* DetailStoreViewController.m */; };
+		41932DFD1A67EFDD00E70CF6 /* Store.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41932DFC1A67EFDD00E70CF6 /* Store.plist */; };
+		41932E031A67F39600E70CF6 /* corsair.png in Resources */ = {isa = PBXBuildFile; fileRef = 41932DFF1A67F39600E70CF6 /* corsair.png */; };
+		41932E041A67F39600E70CF6 /* beats.png in Resources */ = {isa = PBXBuildFile; fileRef = 41932E001A67F39600E70CF6 /* beats.png */; };
+		41932E051A67F39600E70CF6 /* sony.png in Resources */ = {isa = PBXBuildFile; fileRef = 41932E011A67F39600E70CF6 /* sony.png */; };
+		41932E061A67F39600E70CF6 /* apple.gif in Resources */ = {isa = PBXBuildFile; fileRef = 41932E021A67F39600E70CF6 /* apple.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +140,11 @@
 		252708171A66877800E5E782 /* DetailTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTabBarController.m; sourceTree = "<group>"; };
 		417E2CD41A67B94E000510B9 /* DetailStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStoreViewController.h; sourceTree = "<group>"; };
 		417E2CD51A67B94E000510B9 /* DetailStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStoreViewController.m; sourceTree = "<group>"; };
+		41932DFC1A67EFDD00E70CF6 /* Store.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Store.plist; sourceTree = "<group>"; };
+		41932DFF1A67F39600E70CF6 /* corsair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corsair.png; sourceTree = "<group>"; };
+		41932E001A67F39600E70CF6 /* beats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beats.png; sourceTree = "<group>"; };
+		41932E011A67F39600E70CF6 /* sony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sony.png; sourceTree = "<group>"; };
+		41932E021A67F39600E70CF6 /* apple.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = apple.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +210,7 @@
 				252382AF1A6670EB001393AA /* Brand.plist */,
 				2523822F1A64D45B001393AA /* Malls_ID.xcdatamodeld */,
 				252382281A64D45B001393AA /* Supporting Files */,
+				41932DFC1A67EFDD00E70CF6 /* Store.plist */,
 			);
 			path = "Malls@ID";
 			sourceTree = "<group>";
@@ -243,6 +254,7 @@
 		252382561A64D772001393AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				41932DFE1A67F03B00E70CF6 /* Store */,
 				2525C4281A66CB9200DB466A /* background.png */,
 				252382A41A66707C001393AA /* Brands */,
 				2523828E1A650807001393AA /* Malls */,
@@ -325,6 +337,17 @@
 				417E2CD51A67B94E000510B9 /* DetailStoreViewController.m */,
 			);
 			name = Menu_Store;
+			sourceTree = "<group>";
+		};
+		41932DFE1A67F03B00E70CF6 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				41932DFF1A67F39600E70CF6 /* corsair.png */,
+				41932E001A67F39600E70CF6 /* beats.png */,
+				41932E011A67F39600E70CF6 /* sony.png */,
+				41932E021A67F39600E70CF6 /* apple.gif */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +437,7 @@
 				252382761A64DE3C001393AA /* menu@2x.png in Resources */,
 				252382661A64DD9A001393AA /* clock.png in Resources */,
 				252382AA1A66709E001393AA /* ibox.png in Resources */,
+				41932E041A67F39600E70CF6 /* beats.png in Resources */,
 				252382951A650834001393AA /* grand_indonesia.PNG in Resources */,
 				252382701A64DD9A001393AA /* shopping_bag.png in Resources */,
 				252382AD1A66709E001393AA /* uniqlo.png in Resources */,
@@ -422,18 +446,22 @@
 				252382AE1A66709E001393AA /* zara.png in Resources */,
 				2523826E1A64DD9A001393AA /* price_tag_red.png in Resources */,
 				252382AB1A66709E001393AA /* matahari.png in Resources */,
+				41932E051A67F39600E70CF6 /* sony.png in Resources */,
 				2525C4291A66CB9200DB466A /* background.png in Resources */,
 				2523823C1A64D45B001393AA /* LaunchScreen.xib in Resources */,
 				252382651A64DD9A001393AA /* calendar.png in Resources */,
+				41932DFD1A67EFDD00E70CF6 /* Store.plist in Resources */,
 				2523826A1A64DD9A001393AA /* letter.png in Resources */,
 				2523826B1A64DD9A001393AA /* mail.png in Resources */,
 				252382971A650834001393AA /* pondok_indah_mall.png in Resources */,
 				252382991A65090C001393AA /* Venue.plist in Resources */,
+				41932E031A67F39600E70CF6 /* corsair.png in Resources */,
 				252382741A64DE3C001393AA /* map.png in Resources */,
 				252382391A64D45B001393AA /* Images.xcassets in Resources */,
 				252382AC1A66709E001393AA /* sports_station.png in Resources */,
 				252382961A650834001393AA /* kelapa_gading_mall.PNG in Resources */,
 				252382641A64DD9A001393AA /* box.png in Resources */,
+				41932E061A67F39600E70CF6 /* apple.gif in Resources */,
 				252382671A64DD9A001393AA /* comment.png in Resources */,
 				2523826C1A64DD9A001393AA /* price_tag_blue.png in Resources */,
 				252382B01A6670EB001393AA /* Brand.plist in Resources */,
